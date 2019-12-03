@@ -1,0 +1,190 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v16-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v16-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('../fonts/lato-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v16-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v16-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Lato Black'), local('Lato-Black'),
+       url('../fonts/lato-v16-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato-v16-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lato-v16-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato-v16-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato-v16-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #23232e;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 13.4rem;
+  height: 13.4rem;
+  margin-bottom: 18.5rem;
+}
+
+.logo img {
+  width: 13.4rem;
+  height: 13.4rem;
+}
+
+.main-title h1 {
+  color: white;
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6.4rem;
+
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18.4rem;
+  width: 41.3rem;
+}
+
+.subtitle p {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  text-align: center;
+  transition: transform 1s linear;
+}
+
+.subtitle p:hover {
+  transform: scale(1.5);
+}
+
+.arrow {
+  margin-right: auto;
+  margin-left: auto;
+  width: 46px;
+  height: 46px;
+  border: 2px white solid;
+  border-radius: 50%;
+}
+
+i {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: translate(150%, 150%) rotate(45deg);
+}
+
+section {
+  background: url(../img/stripes.png) 100% 100% no-repeat;
+  padding: 12rem 0;
+}
+
+.about {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 82rem;
+  margin-bottom: 12rem;
+}
+
+.about p {
+  font-size: 3rem;
+  line-height: 4.2rem;
+  color: #464b4f;
+  text-align: center;
+}
+
+.wierd-title {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.wierd-title h2 {
+  font-size: 8rem;
+  line-height: 3.6rem;
+  color: #464b4f;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  margin: auto;
+  max-width: 93rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  margin-right: 3.4rem;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.caption {
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+  color: #464b4f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.content {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #888a8b;
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
